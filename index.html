@@ -3,10 +3,223 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+    <!-- google map -->
+    <script type="text/javascript"
+      src="http://maps.googleapis.com/maps/api/js?sensor=true">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+        var markerLatLng = new google.maps.LatLng(59.938783,30.3230014);
+
+        var mapOptions = {
+          center: markerLatLng,
+          zoom: 18,
+          mapTypeId: google.maps.MapTypeId.ROADMAP,
+          scrollwheel: false
+        };
+
+        var map = new google.maps.Map(document.getElementById("map_canvas"),
+            mapOptions);
+
+        var marker = new google.maps.Marker({
+            position: markerLatLng,
+            map: map,
+            title: 'Нёрдс'
+        });
+      }
+
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
   </head>
   <body>
+    <header class="main-header">
+      <div class="container clearfix">
+        <div class="logo">
+          <img src="img/logo.png" width="139" height="56" alt="Логотип «Нёрдс»">
+        </div>
+        <nav class="main-navigation">
+          <ul>
+            <li class="active">
+              <a href="#">Студия</a>
+            </li>
+            <li>
+              <a href="#">Клиенты</a>
+            </li>
+            <li>
+              <a href="#">Магазин</a>
+            </li>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="cart-block">
+          <a href="#" class="login">Корзина</a>
+        </div>
+      </div>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive">Базовый HTML и CSS</a>».</p>
+      <div class="slider">
+        <ul class="carousel-indicator">
+          <li class="active"></li>
+          <li></li>
+          <li></li>
+        </ul>
+        <div class="carousel">
+          <div class="carousel-item">
+            <img src="img/slider-img-1.png" width="338" height="231" alt="Дизайн под разные устройства">
+            <div class="carousel-item-caption">
+              <div class="carousel-item-title">Долго, дорого, скурпулёзно</div>
+              <p>Математически выверенны дизайн<br>для вашего сайта или мобильного приложения</p>
+              <a href="#" class="learn-more">Узнать больше</a>
+            </div>
+          </div>
+        </div>
 
+        <div class="carousel">
+          <div class="carousel-item">
+            <img src="img/slider-img-2.png" width="230" height="249" alt="Чёткий дизайн">
+            <div class="carousel-item-caption">
+              <div class="carousel-item-title">Любите ли вы математику, как любим её мы?</div>
+              <p>Нашим дизайнерам мы удаляем нейроны, ответсвенные за креатив, чтобы дать им возможность всё просчитать</p>
+              <a href="#" class="learn-more">Узнать больше</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel">
+          <div class="carousel-item">
+            <img src="img/slider-img-3.png" width="333" height="319" alt="Креативный подход">
+            <div class="carousel-item-caption">
+              <div class="carousel-item-title">Только наркотики, только хардкор!</div>
+              <p>Все дизайнерские решения в нашей компании принимаются только под воздействием качественных галлюциногенов</p>
+              <a href="#" class="learn-more">Узнать больше</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </header>
+
+    <div class="container">
+      <section class="features clearfix">
+        <div class="features-item">
+          <img src="img/features-item-img-1.png" width="240" height="124" alt="Веб-сайты">
+          <div class="features-item-title">Веб-сайты</div>
+          <p>Мир никогда не будет прежним<br>после того, как увидит ваш сайт!</p>
+          <a href="#" class="order-now">Заказать</a>
+        </div>
+        <div class="features-item">
+         <img src="img/features-item-img-2.png" width="240" height="124" alt="Приложения">
+          <div class="features-item-title">Приложения</div>
+          <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+          <a href="#" class="order-now">Заказать</a>
+        </div>
+        <div class="features-item">
+          <img src="img/features-item-img-3.png" width="240" height="124" alt="Презентации">
+          <div class="features-item-title">Презентации</div>
+          <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+          <a href="#" class="order-now">Заказать</a>
+        </div>
+      </section>
+
+      <hr>
+
+      <section class="content-row clearfix">
+        <div class="content-column-left">
+          <h2>Мы — маленькая, но гордая дизайн-студия из Краснодара.</h2>
+          <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.</p>
+        </div>
+        <div class="content-column-right">
+          <div class="logo-about">
+            <img src="img/logo-about.png" width="187" height="75" alt="Логотип «Нёрдс»">
+          </div>
+          <div class="since">Since 2004</div>
+        </div>
+
+        <div class="content-column-left">
+          <div class="content-title">Выполняем заказы на разработку:</div>
+          <ul>
+            <li>Веб-сайтов любой сложности</li>
+            <li>Мобильных приложений для iOS и Android</li>
+            <li>Слайдшоу и видео для корпоративных презентаций</li>
+          </ul>
+        </div>
+
+        <div class="content-column-right">
+          <div class="content-title">Как мы работаем:</div>
+          <ul>
+            <li>С самоотдачей 146%</li>
+            <li>Соблюдая сроки на 100%</li>
+            <li>По предоплате 50%й</li>
+          </ul>
+        </div>
+      </section>
+
+      <hr>
+      <div class="partners">
+        <a class="logo-partners">
+          <img src="img/logo-partners-1.png" width="198" height="37" alt="Glukhanko">
+        </a>
+        <a class="logo-partners">
+          <img src="img/logo-partners-2.png" width="199" height="68" alt="Html-academy">
+        </a>
+        <a class="logo-partners">
+          <img src="img/logo-partners-3.png" width="209" height="90" alt="Barbershop borodinski">
+        </a>
+      </div>
+      <hr>
+    </div>
+
+    <footer class="main-footer">
+      <div class="container clearfix">
+        <section class="footer-map">
+          <div id="map_canvas" class="google-map"></div>
+          <div class="contacts">
+            <div class="name-studio">Nёrds design studio</div>
+            <div class="address">191186, Санкт-Петербург, ул. Б. Конюшечная д. 19/8</div>
+            <a href="tel:+78122757575" class="tel">тел.: +7 (812) 275-75-75</a>
+            <a href="#">Напишите нам</a>
+
+          </div>
+        </section>
+        <section class="footer-social">
+          <div class="footer-social-btn">
+            <a href="#" class="social-btn social-btn-vk">Вконтакте</a>
+            <a href="#" class="social-btn social-btn-fb">Фейсбук</a>
+            <a href="#" class="social-btn social-btn-inst">Инстаграм</a>
+          </div>
+          <div class="footer-social-title">
+            <div class="social-title">Давайте дружить, это выгодно!</div>
+            <p>Скидка 10% для друзей из социальных сетей.</p>
+          </div>
+        </section>
+      </div>
+    </footer>
+
+    <div class="popup-write-to-us">
+      <span href="#" class="popup-close"></span>
+      <form action="#" method="get">
+        <div class="user-name">
+          <label for="user-name-id">Ваше имя:</label>
+          <br>
+          <input id="user-name-id" type="text" name="user-name" value="Представьтесь, пожалуйста">
+        </div>
+        <div class="user-email">
+          <label for="user-email-id">Ваш e-mail:</label>
+          <br>
+          <input id="user-email-id" type="text" name="user-email" value="Для отправки ответа">
+        </div>
+        <label for="user-text-letter-id">Текст письма:</label>
+        <br>
+        <textarea id="user-text-letter-id" name="text-letter">В свободной форме</textarea>
+        <div class="popup-write-to-us-button">
+          <button class="to-send">Отправить</button>
+          <button class="cancel">Отмена</button>
+        </div>
+      </form>
+    </div>
   </body>
 </html>
