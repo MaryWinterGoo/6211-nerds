@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Нёрдс</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+    <!-- google map -->
+    <script type="text/javascript"
+      src="http://maps.googleapis.com/maps/api/js?sensor=true">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+        var markerLatLng = new google.maps.LatLng(59.938783,30.3230014);
+
+        var mapOptions = {
+          center: markerLatLng,
+          zoom: 18,
+          mapTypeId: google.maps.MapTypeId.ROADMAP,
+          scrollwheel: false
+        };
+
+        var map = new google.maps.Map(document.getElementById("map_canvas"),
+            mapOptions);
+
+        var marker = new google.maps.Marker({
+            position: markerLatLng,
+            map: map,
+            title: 'Нёрдс'
+        });
+      }
+
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container clearfix">
+        <div class="logo">
+          <img src="img/logo.png" width="139" height="56" alt="Логотип «Нёрдс»">
+        </div>
+        <nav class="main-navigation">
+          <ul>
+            <li class="active">
+              <a href="#">Студия</a>
+            </li>
+            <li>
+              <a href="#">Клиенты</a>
+            </li>
+            <li>
+              <a href="#">Магазин</a>
+            </li>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="cart-block">
+          <a href="#" class="login">Корзина</a>
+        </div>
+      </div>
+
+      <h1>Добро пожаловать в магазин готовых макетов</h1>
+
+    </header>
+
+    <div class="container">
+
+      <div class="filter">
+        <form action="#" method="get">
+          <div class="filter-group">
+            <div class="filter-group-name">Стоимость:</div>
+            <div class="range-slider">
+              <div class="all-range"></div>
+              <div class="selected-range"></div>
+              <a href="#" class="left-range"></a>
+              <a href="#" class="right-range"></a>
+            </div>
+            <label>
+              от
+              <input id="value-from" type="text" name="from" value="0">
+            </label>
+            <label>
+              до
+              <input id="value-to" type="text" name="to" value="15000">
+            </label>
+          </div>
+
+          <div class="filter-group">
+            <div class="filter-group-name">Сетка:</div>
+              <label>
+                <input id="r-adaptive" type="radio" name="grid" value="adaptive" checked>
+                Адаптивная
+              </label>
+              <br>
+              <label>
+                <input id="r-fixed" type="radio" name="grid" value="fixed">
+                Фиксированная
+              </label>
+              <br>
+              <label>
+                <input id="r-responsive" type="radio" name="grid" value="responsive">
+                Резиновая
+              </label>
+          </div>
+
+          <div class="filter-group">
+            <div class="filter-group-name">Особенности:</div>
+            <label>
+              <input id="c-slider" type="checkbox" name="slider" checked>
+              Слайдер
+            </label>
+            <br>
+            <label>
+              <input id="c-blockadvantage" type="checkbox" name="blockadvantage">
+              Блок преимуществ
+            </label>
+            <br>
+            <label>
+              <input id="c-news" type="checkbox" name="news" checked>
+              Новости
+            </label>
+            <br>
+            <label>
+              <input id="c-gallery" type="checkbox" name="gallery">
+              Галерея
+            </label>
+            <br>
+            <label>
+              <input id="c-cart" type="checkbox" name="cart">
+              Корзина
+            </label>
+          </div>
+          <button class="show-filtred">Показать</button>
+        </form>
+      </div>
+
+      <div class="catalog">
+
+        <div class="sort">
+          <div class="sort-title">Сортировать:</div>
+          <ul class="sort-type">
+            <li><a href="#">По цене</a></li>
+            <li><a href="#">По типу</a></li>
+            <li><a href="#">По функционалу</a></li>
+          </ul>
+          <ul class="sort-mode">
+            <li class="sort-mode-down"><a href="#"></a></li>
+            <li class="sort-mode-up"><a href="#"></a></li>
+          </ul>
+        </div>
+
+        <article class="catalog-item">
+          <div class="catalog-item-head">
+            <span class="catalog-item-head-round"></span>
+            <span class="catalog-item-head-round"></span>
+            <span class="catalog-item-head-round"></span>
+          </div>
+          <img src="img/catalog-item-img-1.jpg" width="240" height="240" alt="Товар">
+          <div class="catalog-item-description">
+            <a class="catalog-item-title">Sunset</a>
+            <p>Интернет-магазин с личным кабинетом</p>
+            <a href="#" class="add-to-cart">10000 р.</a>
+          </div>
+        </article>
+        <article class="catalog-item">
+          <img src="img/catalog-item-img-2.jpg" width="240" height="240" alt="Товар">
+          <div class="catalog-item-description">
+            <a class="catalog-item-title">Sunset</a>
+            <p>Интернет-магазин с личным кабинетом</p>
+            <a href="#" class="add-to-cart"><span>10000 р.</span></a>
+          </div>
+        </article>
+        <article class="catalog-item">
+          <img src="img/catalog-item-img-3.jpg" width="240" height="240" alt="Товар">
+          <div class="catalog-item-description">
+            <a class="catalog-item-title">Sunset</a>
+            <p>Интернет-магазин с личным кабинетом</p>
+            <a href="#" class="add-to-cart"><span>10000 р.</span></a>
+          </div>
+        </article>
+        <article class="catalog-item">
+          <img src="img/catalog-item-img-4.jpg" width="240" height="240" alt="Товар">
+          <div class="catalog-item-description">
+            <a class="catalog-item-title">Sunset</a>
+            <p>Интернет-магазин с личным кабинетом</p>
+            <a href="#" class="add-to-cart"><span>10000 р.</span></a>
+          </div>
+        </article>
+        <article class="catalog-item">
+          <img src="img/catalog-item-img-5.jpg" width="240" height="240" alt="Товар">
+          <div class="catalog-item-description">
+            <a class="catalog-item-title">Sunset</a>
+            <p>Интернет-магазин с личным кабинетом</p>
+            <a href="#" class="add-to-cart"><span>10000 р.</span></a>
+          </div>
+        </article>
+        <article class="catalog-item">
+          <img src="img/catalog-item-img-6.jpg" width="240" height="240" alt="Товар">
+          <div class="catalog-item-description">
+            <a class="catalog-item-title">Sunset</a>
+            <p>Интернет-магазин с личным кабинетом</p>
+            <a href="#" class="add-to-cart"><span>10000 р.</span></a>
+          </div>
+        </article>
+
+        <ul class="paginator">
+          <li>
+            <a href="#">1</a>
+          </li>
+          <li class="active">
+            <a href="#">2</a>
+          </li>
+          <li>
+            <a href="#">3</a>
+          </li>
+          <li>
+            <a href="#">Следующая</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <footer class="main-footer">
+      <div class="container clearfix">
+        <section class="footer-map">
+          <div id="map_canvas" class="google-map"></div>
+          <div class="contacts">
+            <div class="name-studio">Nёrds design studio</div>
+            <address>191186, Санкт-Петербург, ул. Б. Конюшечная д. 19/8</address>
+            <a href="tel:+78122757575" class="tel">тел.: +7 (812) 275-75-75</a>
+            <a href="#">Напишите нам</a>
+          </div>
+        </section>
+        <section class="footer-social">
+          <a href="#" class="social-btn social-btn-vk">Вконтакте</a>
+          <a href="#" class="social-btn social-btn-fb">Фейсбук</a>
+          <a href="#" class="social-btn social-btn-inst">Инстаграм</a>
+          <div class="footer-social-title">Давайте дружить, это выгодно!</div>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
+        </section>
+      </div>
+    </footer>
+
+    <div class="popup-write-to-us">
+      <span href="#" class="popup-close"></span>
+      <form action="#" method="get">
+        <div class="user-name">
+          <label for="user-name-id">Ваше имя:</label>
+          <br>
+          <input id="user-name-id" type="text" name="user-name" value="Представьтесь, пожалуйста">
+        </div>
+        <div class="user-email">
+          <label for="user-email-id">Ваш e-mail:</label>
+          <br>
+          <input id="user-email-id" type="text" name="user-email" value="Для отправки ответа">
+        </div>
+        <label for="user-text-letter-id">Текст письма:</label>
+        <br>
+        <textarea id="user-text-letter-id" name="text-letter">В свободной форме</textarea>
+        <div class="popup-write-to-us-button">
+          <button class="to-send">Отправить</button>
+          <button class="cancel">Отмена</button>
+        </div>
+      </form>
+    </div>
+
+  </body>
+</html>
