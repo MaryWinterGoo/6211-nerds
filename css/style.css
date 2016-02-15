@@ -15,6 +15,7 @@ body {
 h1 {
   font-size: 40px;
   line-height: normal;
+  margin-bottom: 90px;
 }
 
 h2 {
@@ -57,14 +58,18 @@ h1, h2 {
   min-height: 124px;
 }
 
+.header {
+  margin-bottom: 50px;
+}
+
 .slider {
   border: 1px solid black;
 }
 
 header {
   margin-bottom: 80px;
+  background-color: grey;
 }
-
 
 .features {
   margin-bottom: 60px;
@@ -142,6 +147,86 @@ header {
 .footer-social-title {
   float: right;
   width: 560px;
+}
+
+/* catalog */
+.filter {
+  float: left;
+  width: 300px;
+  margin-right: 20px;
+  min-height: 730px;
+}
+
+.filter-group {
+  margin-bottom: 50px;
+}
+
+.filter-group-name {
+  margin-bottom: 15px;
+}
+
+legend {
+  margin-bottom: 35px;
+  display: block;
+}
+
+fieldset{
+  border: 0;
+}
+
+label {
+  display: block;
+  margin-bottom: 16px;
+}
+
+.catalog {
+  float: right;
+  width: 560px;
+  min-height: 100px;
+}
+
+.sort {
+  margin-bottom: 25px;
+}
+
+.sort-title {
+  float: left;
+  width: 100px;
+  margin-right: 20px;
+}
+
+.sort-type {
+  float: left;
+  width: 300px;
+  margin-right: 20px;
+}
+
+.sort-mode {
+  float: right;
+  width: 35px;
+}
+
+ul.sort-type, ul.sort-mode {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.catalog-item {
+  float: left;
+  width: 240px;
+  min-height: 270px;
+  margin-right: 80px;
+  margin-bottom: 80px;
+}
+
+.catalog-item:nth-child(odd) {
+  margin-right: 0;
+}
+
+.catalog ul.paginator {
+  clear: both;
+  margin-top: 80px;
+  margin-bottom: 80px;
 }
 
 /* google-map */

@@ -37,108 +37,107 @@
   <body>
     <header class="main-header">
       <div class="container clearfix">
-        <div class="logo">
-          <img src="img/logo.png" width="139" height="56" alt="Логотип «Нёрдс»">
+        <div class="header clearfix">
+          <div class="logo">
+            <img src="img/logo.png" width="139" height="56" alt="Логотип «Нёрдс»">
+          </div>
+          <nav class="main-navigation">
+            <ul>
+              <li class="active">
+                <a href="#">Студия</a>
+              </li>
+              <li>
+                <a href="#">Клиенты</a>
+              </li>
+              <li>
+                <a href="#">Магазин</a>
+              </li>
+              <li>
+                <a href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="cart-block">
+            <a href="#" class="login">Корзина</a>
+          </div>
         </div>
-        <nav class="main-navigation">
-          <ul>
-            <li class="active">
-              <a href="#">Студия</a>
-            </li>
-            <li>
-              <a href="#">Клиенты</a>
-            </li>
-            <li>
-              <a href="#">Магазин</a>
-            </li>
-            <li>
-              <a href="#">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="cart-block">
-          <a href="#" class="login">Корзина</a>
-        </div>
+        <h1>Добро пожаловать в магазин готовых макетов</h1>
       </div>
-
-      <h1>Добро пожаловать в магазин готовых макетов</h1>
-
     </header>
 
-    <div class="container">
-
+    <div class="container clearfix">
       <div class="filter">
         <form action="#" method="get">
           <div class="filter-group">
-            <div class="filter-group-name">Стоимость:</div>
-            <div class="range-slider">
-              <div class="all-range"></div>
-              <div class="selected-range"></div>
-              <a href="#" class="left-range"></a>
-              <a href="#" class="right-range"></a>
-            </div>
-            <label>
-              от
-              <input id="value-from" type="text" name="from" value="0">
-            </label>
-            <label>
-              до
-              <input id="value-to" type="text" name="to" value="15000">
-            </label>
+            <fieldset>
+              <legend>Стоимость:</legend>
+              <div class="range-slider">
+                <div class="all-range"></div>
+                <div class="selected-range"></div>
+                <a href="#" class="left-range"></a>
+                <a href="#" class="right-range"></a>
+              </div>
+              <label>
+                от
+                <input id="value-from" type="text" name="from" value="0">
+              </label>
+              <label>
+                до
+                <input id="value-to" type="text" name="to" value="15000">
+              </label>
+            </fieldset>
           </div>
 
           <div class="filter-group">
-            <div class="filter-group-name">Сетка:</div>
+            <fieldset>
+              <legend>Сетка:</legend>
               <label>
                 <input id="r-adaptive" type="radio" name="grid" value="adaptive" checked>
                 Адаптивная
               </label>
-              <br>
               <label>
                 <input id="r-fixed" type="radio" name="grid" value="fixed">
                 Фиксированная
               </label>
-              <br>
               <label>
                 <input id="r-responsive" type="radio" name="grid" value="responsive">
                 Резиновая
               </label>
+            </fieldset>
           </div>
 
           <div class="filter-group">
-            <div class="filter-group-name">Особенности:</div>
-            <label>
-              <input id="c-slider" type="checkbox" name="slider" checked>
-              Слайдер
-            </label>
-            <br>
-            <label>
-              <input id="c-blockadvantage" type="checkbox" name="blockadvantage">
-              Блок преимуществ
-            </label>
-            <br>
-            <label>
-              <input id="c-news" type="checkbox" name="news" checked>
-              Новости
-            </label>
-            <br>
-            <label>
-              <input id="c-gallery" type="checkbox" name="gallery">
-              Галерея
-            </label>
-            <br>
-            <label>
-              <input id="c-cart" type="checkbox" name="cart">
-              Корзина
-            </label>
+            <fieldset>
+              <legend>Особенности:</legend>
+              <label>
+                <input id="c-slider" type="checkbox" name="slider" checked>
+                Слайдер
+              </label>
+              <label>
+                <input id="c-blockadvantage" type="checkbox" name="blockadvantage">
+                Блок преимуществ
+              </label>
+              <label>
+                <input id="c-news" type="checkbox" name="news" checked>
+                Новости
+              </label>
+              <label>
+                <input id="c-gallery" type="checkbox" name="gallery">
+                Галерея
+              </label>
+              <label>
+                <input id="c-cart" type="checkbox" name="cart">
+                Корзина
+              </label>
+            </fieldset>
           </div>
-          <button class="show-filtred">Показать</button>
+          <button type="submit" class="show-filtred">Показать</button>
         </form>
       </div>
 
-      <div class="catalog">
+      <div class="catalog clearfix">
 
-        <div class="sort">
+        <div class="sort clearfix">
           <div class="sort-title">Сортировать:</div>
           <ul class="sort-type">
             <li><a href="#">По цене</a></li>
@@ -220,28 +219,31 @@
           </li>
         </ul>
       </div>
+    </div>
 
     </div>
 
     <footer class="main-footer">
-      <div class="container clearfix">
         <section class="footer-map">
           <div id="map_canvas" class="google-map"></div>
           <div class="contacts">
             <div class="name-studio">Nёrds design studio</div>
-            <address>191186, Санкт-Петербург, ул. Б. Конюшечная д. 19/8</address>
+            <div class="address">191186, Санкт-Петербург, ул. Б. Конюшечная д. 19/8</div>
             <a href="tel:+78122757575" class="tel">тел.: +7 (812) 275-75-75</a>
             <a href="#">Напишите нам</a>
           </div>
         </section>
-        <section class="footer-social">
-          <a href="#" class="social-btn social-btn-vk">Вконтакте</a>
-          <a href="#" class="social-btn social-btn-fb">Фейсбук</a>
-          <a href="#" class="social-btn social-btn-inst">Инстаграм</a>
-          <div class="footer-social-title">Давайте дружить, это выгодно!</div>
-          <p>Скидка 10% для друзей из социальных сетей.</p>
+        <section class="container footer-social clearfix">
+          <div class="footer-social-btn">
+            <a href="#" class="social-btn social-btn-vk">Вконтакте</a>
+            <a href="#" class="social-btn social-btn-fb">Фейсбук</a>
+            <a href="#" class="social-btn social-btn-inst">Инстаграм</a>
+          </div>
+          <div class="footer-social-title">
+            <div class="social-title">Давайте дружить, это выгодно!</div>
+            <p>Скидка 10% для друзей из социальных сетей.</p>
+          </div>
         </section>
-      </div>
     </footer>
 
     <div class="popup-write-to-us">
