@@ -1,3 +1,10 @@
+html,
+body {
+  min-width: 1122px;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-size: 15px;
   line-height: 22px;
@@ -19,6 +26,133 @@ h1, h2 {
   color: black;
 }
 
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+  width: 880px;
+  margin: 0 auto;
+  padding: 0 10px;
+  border: 1px solid black;
+}
+
+.logo {
+  float: left;
+  width: 300px;
+  min-height: 124px;
+}
+
+.main-navigation {
+  float: left;
+  width: 460px;
+  min-height: 124px;
+}
+
+.cart-block {
+  float: right;
+  width: 100px;
+  min-height: 124px;
+}
+
+.slider {
+  border: 1px solid black;
+}
+
+header {
+  margin-bottom: 80px;
+}
+
+
+.features {
+  margin-bottom: 60px;
+}
+
+.features-item {
+  float: left;
+  width: 240px;
+  min-height: 300px;
+  margin-right: 80px;
+  margin-bottom: 80px;
+}
+
+.features-item img, .features-item p, .features-item h2 {
+  margin-bottom: 30px;
+}
+
+.features-item:nth-child(3n) {
+  float: right;
+  margin-right: 0;
+}
+
+.content-row {
+  margin-bottom: 20px;
+}
+
+.content-column-left {
+  float: left;
+  width: 620px;
+  margin-bottom: 50px;
+}
+
+.content-column-right {
+  float: right;
+  width: 240px;
+  margin-bottom: 50px;
+}
+
+.partners {
+  margin-bottom: 85px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.logo-partners {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 100px;
+}
+
+.logo-partners:last-child {
+  margin-right: 0;
+}
+
+.contacts {
+  position: absolute;
+  top: 90px;
+  left: 160px;
+}
+
+.footer-map {
+  position: relative;
+}
+
+.footer-social {
+  margin-top: 75px;
+  margin-bottom: 75px;
+}
+
+.footer-social-btn {
+  float: left;
+  width: 300px;
+}
+.footer-social-title {
+  float: right;
+  width: 560px;
+}
+
+/* google-map */
 .google-map {
   height: 500px;
 }
+
+
+
+
+
+
+
+

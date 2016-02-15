@@ -37,65 +37,67 @@
   <body>
     <header class="main-header">
       <div class="container clearfix">
-        <div class="logo">
-          <img src="img/logo.png" width="139" height="56" alt="Логотип «Нёрдс»">
+        <div class="header clearfix">
+          <div class="logo">
+            <img src="img/logo.png" width="139" height="56" alt="Логотип «Нёрдс»">
+          </div>
+          <nav class="main-navigation">
+            <ul>
+              <li class="active">
+                <a href="#">Студия</a>
+              </li>
+              <li>
+                <a href="#">Клиенты</a>
+              </li>
+              <li>
+                <a href="#">Магазин</a>
+              </li>
+              <li>
+                <a href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="cart-block">
+            <a href="#" class="login">Корзина</a>
+          </div>
         </div>
-        <nav class="main-navigation">
-          <ul>
-            <li class="active">
-              <a href="#">Студия</a>
-            </li>
-            <li>
-              <a href="#">Клиенты</a>
-            </li>
-            <li>
-              <a href="#">Магазин</a>
-            </li>
-            <li>
-              <a href="#">Контакты</a>
-            </li>
+
+        <div class="slider">
+          <ul class="carousel-indicator">
+            <li class="active"></li>
+            <li></li>
+            <li></li>
           </ul>
-        </nav>
-        <div class="cart-block">
-          <a href="#" class="login">Корзина</a>
-        </div>
-      </div>
-
-      <div class="slider">
-        <ul class="carousel-indicator">
-          <li class="active"></li>
-          <li></li>
-          <li></li>
-        </ul>
-        <div class="carousel">
-          <div class="carousel-item">
-            <img src="img/slider-img-1.png" width="338" height="231" alt="Дизайн под разные устройства">
-            <div class="carousel-item-caption">
-              <div class="carousel-item-title">Долго, дорого, скурпулёзно</div>
-              <p>Математически выверенны дизайн<br>для вашего сайта или мобильного приложения</p>
-              <a href="#" class="learn-more">Узнать больше</a>
+          <div class="carousel">
+            <div class="carousel-item">
+              <div class="carousel-item-caption">
+                <div class="carousel-item-title">Долго, дорого, скурпулёзно</div>
+                <p>Математически выверенны дизайн<br>для вашего сайта или мобильного приложения</p>
+                <a href="#" class="learn-more">Узнать больше</a>
+                <img src="img/slider-img-1.png" width="338" height="231" alt="Дизайн под разные устройства">
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="carousel">
-          <div class="carousel-item">
-            <img src="img/slider-img-2.png" width="230" height="249" alt="Чёткий дизайн">
-            <div class="carousel-item-caption">
-              <div class="carousel-item-title">Любите ли вы математику, как любим её мы?</div>
-              <p>Нашим дизайнерам мы удаляем нейроны, ответсвенные за креатив, чтобы дать им возможность всё просчитать</p>
-              <a href="#" class="learn-more">Узнать больше</a>
+          <div class="carousel">
+            <div class="carousel-item">
+              <div class="carousel-item-caption">
+                <div class="carousel-item-title">Любите ли вы математику, как любим её мы?</div>
+                <p>Нашим дизайнерам мы удаляем нейроны, ответсвенные за креатив, чтобы дать им возможность всё просчитать</p>
+                <a href="#" class="learn-more">Узнать больше</a>
+                <img src="img/slider-img-2.png" width="230" height="249" alt="Чёткий дизайн">
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="carousel">
-          <div class="carousel-item">
-            <img src="img/slider-img-3.png" width="333" height="319" alt="Креативный подход">
-            <div class="carousel-item-caption">
-              <div class="carousel-item-title">Только наркотики, только хардкор!</div>
-              <p>Все дизайнерские решения в нашей компании принимаются только под воздействием качественных галлюциногенов</p>
-              <a href="#" class="learn-more">Узнать больше</a>
+          <div class="carousel">
+            <div class="carousel-item">
+              <div class="carousel-item-caption">
+                <div class="carousel-item-title">Только наркотики, только хардкор!</div>
+                <p>Все дизайнерские решения в нашей компании принимаются только под воздействием качественных галлюциногенов</p>
+                <a href="#" class="learn-more">Узнать больше</a>
+                <img src="img/slider-img-3.png" width="333" height="319" alt="Креативный подход">
+              </div>
             </div>
           </div>
         </div>
@@ -103,7 +105,7 @@
 
     </header>
 
-    <div class="container">
+    <div class="container clearfix">
       <section class="features clearfix">
         <div class="features-item">
           <img src="img/features-item-img-1.png" width="240" height="124" alt="Веб-сайты">
@@ -158,7 +160,6 @@
         </div>
       </section>
 
-      <hr>
       <div class="partners">
         <a class="logo-partners">
           <img src="img/logo-partners-1.png" width="198" height="37" alt="Glukhanko">
@@ -170,11 +171,9 @@
           <img src="img/logo-partners-3.png" width="209" height="90" alt="Barbershop borodinski">
         </a>
       </div>
-      <hr>
     </div>
 
     <footer class="main-footer">
-      <div class="container clearfix">
         <section class="footer-map">
           <div id="map_canvas" class="google-map"></div>
           <div class="contacts">
@@ -182,10 +181,9 @@
             <div class="address">191186, Санкт-Петербург, ул. Б. Конюшечная д. 19/8</div>
             <a href="tel:+78122757575" class="tel">тел.: +7 (812) 275-75-75</a>
             <a href="#">Напишите нам</a>
-
           </div>
         </section>
-        <section class="footer-social">
+        <section class="container footer-social clearfix">
           <div class="footer-social-btn">
             <a href="#" class="social-btn social-btn-vk">Вконтакте</a>
             <a href="#" class="social-btn social-btn-fb">Фейсбук</a>
@@ -196,7 +194,6 @@
             <p>Скидка 10% для друзей из социальных сетей.</p>
           </div>
         </section>
-      </div>
     </footer>
 
     <div class="popup-write-to-us">
