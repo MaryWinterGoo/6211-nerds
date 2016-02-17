@@ -1,11 +1,6 @@
-html,
 body {
-  min-width: 1122px;
   margin: 0;
   padding: 0;
-}
-
-body {
   font-size: 15px;
   line-height: 22px;
   color: #283136;
@@ -24,7 +19,7 @@ h2 {
 }
 
 h1, h2 {
-  color: black;
+  color: #000000;
 }
 
 .clearfix::after {
@@ -37,7 +32,7 @@ h1, h2 {
   width: 880px;
   margin: 0 auto;
   padding: 0 10px;
-  border: 1px solid black;
+  border: 1px solid #000000;
 }
 
 .logo {
@@ -63,7 +58,7 @@ h1, h2 {
 }
 
 .slider {
-  border: 1px solid black;
+  border: 1px solid #000000;
 }
 
 header {
