@@ -244,26 +244,24 @@
       </section>
     </footer>
 
-    <div class="popup-write-to-us">
-      <span href="#" class="popup-close"></span>
-      <form action="#" method="get">
-        <div class="user-name">
-          <label for="user-name-id">Ваше имя:</label>
-          <br>
-          <input id="user-name-id" type="text" name="user-name" value="Представьтесь, пожалуйста">
+    <div class="modal-content">
+      <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+      <form class="form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="clearfix">
+          <div class="user-name">
+            <label for="user-name-id">Ваше имя:</label>
+            <input id="user-name-id" type="text" name="name" placeholder="Представьтесь пожалуйста">
+          </div>
+          <div class="user-email">
+            <label for="user-email-id">Ваш e-mail:</label>
+            <input id="user-email-id" type="text" name="email" placeholder="Для отправки ответа">
+          </div>
         </div>
-        <div class="user-email">
-          <label for="user-email-id">Ваш e-mail:</label>
-          <br>
-          <input id="user-email-id" type="text" name="user-email" value="Для отправки ответа">
-        </div>
+
         <label for="user-text-letter-id">Текст письма:</label>
-        <br>
         <textarea id="user-text-letter-id" name="text-letter">В свободной форме</textarea>
-        <div class="popup-write-to-us-button">
-          <button class="to-send">Отправить</button>
-          <button class="cancel">Отмена</button>
-        </div>
+
+        <button class="to-send" type="submit">Отправить</button>
       </form>
     </div>
 
