@@ -388,6 +388,7 @@ a.cart:active span {
   padding: 15px 40px;
   border-radius: 3px;
   font-size: 12px;
+  font-weight: 300;
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
@@ -544,10 +545,52 @@ a.logo-partners:hover, a.logo-partners:active {
   opacity: 1;
 }
 
+
+/* -----------footer----------- */
 .contacts {
   position: absolute;
   top: 90px;
   left: 160px;
+  padding: 40px 30px;
+  max-width: 250px;
+  background-color: #ffffff;
+}
+
+.contacts .name-studio {
+  margin-bottom: 30px;
+  font-size: 18px;
+  line-height: nornal;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.contacts .address, .contacts tel {
+  margin-bottom: 25px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+  color: #666666;
+}
+
+.contacts a.tel {
+  display: block;
+  margin-bottom: 25px;
+  color: #666666;
+  text-decoration: none;
+}
+
+.contacts .write {
+  display: block;
+  margin-top: 25px;
+  padding: 12px 10px;
+  font-weight: 300;
+  font-size: 12px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #fb565a;
+  border-radius: 3px;
 }
 
 .footer-map {
