@@ -76,64 +76,45 @@
           <div class="filter-group">
             <fieldset>
               <legend>Стоимость:</legend>
-              <div class="range-slider">
-                <div class="all-range"></div>
-                <div class="selected-range"></div>
-                <a href="#" class="left-range"></a>
-                <a href="#" class="right-range"></a>
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar" style="margin-left: 20%; width: 30%"></div>
+                </div>
+                <div class="toggle toggle-min"></div>
+                <div class="toggle toggle-max"></div>
               </div>
-              <label>
-                от
-                <input id="value-from" type="text" name="from" value="0">
-              </label>
-              <label>
-                до
-                <input id="value-to" type="text" name="to" value="15000">
-              </label>
+              <div class="price-controls">
+                <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+              </div>
             </fieldset>
           </div>
 
           <div class="filter-group">
             <fieldset>
               <legend>Сетка:</legend>
-              <label>
-                <input id="r-adaptive" type="radio" name="grid" value="adaptive" checked>
-                Адаптивная
-              </label>
-              <label>
-                <input id="r-fixed" type="radio" name="grid" value="fixed">
-                Фиксированная
-              </label>
-              <label>
-                <input id="r-responsive" type="radio" name="grid" value="responsive">
-                Резиновая
-              </label>
+              <input id="r-adaptive" type="radio" name="grid" value="adaptive" checked>
+              <label for ="r-adaptive">Адаптивная</label>
+              <input id="r-fixed" type="radio" name="grid" value="fixed">
+              <label for="r-fixed">Фиксированная</label>
+              <input id="r-responsive" type="radio" name="grid" value="responsive">
+              <label for="r-responsive">Резиновая</label>
             </fieldset>
           </div>
 
           <div class="filter-group">
             <fieldset>
               <legend>Особенности:</legend>
-              <label>
-                <input id="c-slider" type="checkbox" name="slider" checked>
-                Слайдер
-              </label>
-              <label>
-                <input id="c-blockadvantage" type="checkbox" name="blockadvantage">
-                Блок преимуществ
-              </label>
-              <label>
-                <input id="c-news" type="checkbox" name="news" checked>
-                Новости
-              </label>
-              <label>
-                <input id="c-gallery" type="checkbox" name="gallery">
-                Галерея
-              </label>
-              <label>
-                <input id="c-cart" type="checkbox" name="cart">
-                Корзина
-              </label>
+              <input id="c-slider" type="checkbox" name="slider" checked>
+              <label for="c-slider">Слайдер</label>
+              <input id="c-blockadvantage" type="checkbox" name="blockadvantage">
+              <label for="c-blockadvantage">Блок преимуществ</label>
+              <input id="c-news" type="checkbox" name="news" checked>
+              <label for="c-news">Новости</label>
+              <input id="c-gallery" type="checkbox" name="gallery">
+              <label for="c-gallery">Галерея</label>
+              <input id="c-cart" type="checkbox" name="cart">
+              <label for="c-cart">Корзина</label>
             </fieldset>
           </div>
           <button type="submit" class="show-filtred">Показать</button>
