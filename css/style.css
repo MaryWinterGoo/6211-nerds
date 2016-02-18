@@ -382,13 +382,13 @@ a.cart:active span {
   color: #283136;
 }
 
-.features a.btn {
+a.btn {
   display: inline-block;
   vertical-align: top;
   padding: 15px 40px;
   border-radius: 3px;
   font-size: 12px;
-  font-weight: 300;
+  font-weight: 400;
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
@@ -724,10 +724,10 @@ a.logo-partners:hover, a.logo-partners:active {
 }
 
 .price-controls input {
-  font-family: 'Roboto', 'Arial', sans-serif;
   font-size: 16px;
   width: 60px;
   margin-left: 10px;
+  margin-bottom: 25px;
   padding: 8px 10px;
   text-align: center;
   color: #283136;
@@ -738,16 +738,11 @@ a.logo-partners:hover, a.logo-partners:active {
 }
 
 .filter-group {
-  margin-bottom: 50px;
+  margin-bottom: 25px;
 }
 
 .filter-group-name {
   margin-bottom: 15px;
-}
-
-legend {
-  margin-bottom: 35px;
-  display: block;
 }
 
 fieldset{
@@ -756,10 +751,122 @@ fieldset{
   margin: 0;
 }
 
+legend {
+  display: block;
+  margin-bottom: 25px;
+  font-size: 18px;
+  line-height: normal;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
 label {
   display: block;
-  margin-bottom: 16px;
+  font-weight: 400;
+  color: #283136;
 }
+
+label.min-price, label.max-price {
+  font-size: 16px;
+  line-height: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"] + label {
+  display: block;
+  margin-bottom: 25px;
+  padding-left: 35px;
+  line-height: 20px;
+  position: relative;
+  cursor: pointer;
+}
+
+input[type="checkbox"] + label::before {
+  content: '\2610';
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: "symbols-nerds";
+  font-size: 24px;
+  color: #c1c1c1;
+}
+
+input[type="checkbox"]:checked + label::before {
+  content: '\2611';
+}
+
+input[type="checkbox"]:checked + label:hover {
+  color: #000000;
+}
+
+input[type="checkbox"]:disabled + label, input[type="checkbox"]:disabled + label::before {
+  opacity: 0.5;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"] + label {
+  display: block;
+  margin-bottom: 25px;
+  padding-left: 35px;
+  line-height: 20px;
+  position: relative;
+  cursor: pointer;
+}
+
+input[type="radio"] + label::before {
+  content: '\25cb';
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: "symbols-nerds";
+  font-size: 24px;
+  color: #c1c1c1;
+}
+
+input[type="radio"]:checked + label::before {
+  content: '\25cf';
+}
+
+input[type="radio"]:checked + label:hover {
+  color: #000000;
+}
+
+input[type="radio"]:disabled + label, input[type="radio"]:disabled + label::before {
+  opacity: 0.5;
+}
+
+.filter .btn {
+  padding: 15px 40px;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #0000000;
+  border: 0;
+  text-transform: uppercase;
+  transition: all 0.5s ease;
+}
+
+.filter .btn-gray {
+  background-color: #f1f1f1;
+}
+
+.filter .btn-gray:hover {
+  background-color: #e5e5e5;
+}
+
+.filter .btn-gray:active {
+  background-color: #d5d5d5;
+  box-shadow: 0 -3px #b5b5b5;
+}
+
 
 .catalog {
   float: right;
