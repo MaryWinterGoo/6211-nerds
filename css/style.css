@@ -657,8 +657,12 @@ a.logo-partners:hover, a.logo-partners:active {
   color: #283136;
 }
 
+/* -----------google-map----------- */
+.google-map {
+  height: 500px;
+}
 
-/* -----------catalog----------- */
+/* -----------filter----------- */
 .filter {
   float: left;
   width: 240px;
@@ -867,6 +871,7 @@ input[type="radio"]:disabled + label, input[type="radio"]:disabled + label::befo
   box-shadow: 0 -2px #b5b5b5;
 }
 
+/* -----------catalog----------- */
 .catalog {
   float: right;
   width: 560px;
@@ -879,25 +884,119 @@ input[type="radio"]:disabled + label, input[type="radio"]:disabled + label::befo
 
 .sort-title {
   float: left;
-  width: 100px;
-  margin-right: 20px;
+  margin-right: 40px;
+  font-size: 12px;
+  line-height: normal;
+  font-weight: 500;
+  text-transform: uppercase;
 }
 
 .sort-type {
   float: left;
-  width: 300px;
+  width: 350px;
   margin-right: 20px;
-}
-
-.sort-mode {
-  float: right;
-  width: 35px;
 }
 
 ul.sort-type, ul.sort-mode {
   margin-top: 0;
   margin-bottom: 0;
 }
+
+.sort ul {
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+}
+
+.sort li {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 40px;
+  font-size: 12px;
+  line-height: normal;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.sort-type a {
+  display: block;
+  padding-bottom: 2px;
+  border-bottom: 1px dotted #00ca74;
+  text-decoration: none;
+  opacity: 0.5;
+  color: #000000;
+  transition: all 0.5s ease;
+}
+
+.sort-type span {
+  display: block;
+  padding-bottom: 5px;
+  color: #000000;
+}
+
+.sort-type a:hover {
+  opacity: 1;
+  color: #00ca74;
+  border-bottom: 1px solid #00ca74;
+}
+
+.sort-type a:active {
+  color: #000000;
+  border: 0;
+}
+
+.sort-mode {
+  float: right;
+  max-width: 80px;
+}
+
+.sort-mode ul {
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+}
+
+.sort-mode li {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 0;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.sort-mode a {
+  text-decoration: none;
+  color: #000000;
+  opacity: 0.5;
+  transition: all 0.5s ease;
+}
+
+.sort-mode a:hover {
+  opacity: 0.5;
+}
+
+.sort-mode a:active {
+  opacity: 1;
+}
+
+.sort-mode li > span {
+  display: block;
+  color: #000000;
+}
+
+.sort-mode .active span {
+  display: block;
+  color: #00ca74;
+}
+
+
+
+
+
+
+
 
 .catalog-item {
   float: left;
@@ -911,6 +1010,7 @@ ul.sort-type, ul.sort-mode {
   margin-right: 0;
 }
 
+/* -----------paginator----------- */
 .catalog ul.paginator {
   clear: both;
   margin-top: 80px;
@@ -962,19 +1062,3 @@ ul.paginator li.active span {
   font-size: 12px;
   border: 2px solid #f1f1f1;
 }
-
-
-
-
-/* google-map */
-.google-map {
-  height: 500px;
-}
-
-
-
-
-
-
-
-
