@@ -878,6 +878,7 @@ input[type="radio"]:disabled + label, input[type="radio"]:disabled + label::befo
   min-height: 100px;
 }
 
+/* -----------sort----------- */
 .sort {
   margin-bottom: 25px;
 }
@@ -991,23 +992,106 @@ ul.sort-type, ul.sort-mode {
   color: #00ca74;
 }
 
-
-
-
-
-
-
-
+/* -----------shop----------- */
 .catalog-item {
   float: left;
   width: 240px;
   min-height: 270px;
   margin-right: 80px;
   margin-bottom: 80px;
+  position: relative;
+  text-align: center;
 }
 
 .catalog-item:nth-child(odd) {
   margin-right: 0;
+}
+
+.catalog-item img {
+  width: 240px;
+  height: 240px;
+  padding-top: 30px;
+}
+
+.catalog-item-img {
+  position: relative;
+  transition: all 0.5s ease;
+}
+
+.catalog-item .catalog-item-img::before {
+  content: '';
+  background: url(../img/browser.png) no-repeat;
+  width: 240px;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+  transition: all 0.5s ease;
+}
+
+.catalog-item:hover .catalog-item-img::before {
+  opacity: 1;
+}
+
+.catalog-item-description {
+  display: none;
+  transition: all 0.5s ease;
+}
+
+.catalog-item:hover .catalog-item-description {
+  display: block;
+  position: absolute;
+  top: 50px;
+  left: 20px;
+  width: 200px;
+  height: 200px;
+  background-color: #fff;
+}
+
+.catalog-item:hover .catalog-item-description a.catalog-item-title {
+  display: block;
+  position: relative;
+  margin: 35px auto 20px;
+  font-size: 18px;
+  line-height: normal;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+}
+
+.catalog-item:hover .catalog-item-description p {
+  display: block;
+  margin: 0 20px 30px 20px;
+  font-size: 14px;
+  line-height: normal;
+  font-weight: 500;
+}
+
+.catalog-item:hover .add-to-cart {
+  display: block;
+  position: relative;
+  width: 80px;
+  margin: 0 auto 40px;
+  padding: 10px 20px;
+  color: #ffffff;
+  border-radius: 3px;
+  ont-size: 18px;
+  line-height: normal;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #fb565a;
+}
+
+.catalog-item:hover .add-to-cart:hover {
+  background-color: #d6494d;
+}
+
+.catalog-item:hover .add-to-cart:active {
+  background-color: #b63538;
+  box-shadow: 0 -2px #9b2d30;
 }
 
 /* -----------paginator----------- */
