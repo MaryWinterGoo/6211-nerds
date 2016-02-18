@@ -3,8 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Roboto&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 
     <!-- google map -->
     <script type="text/javascript"
@@ -38,19 +39,19 @@
     <header class="main-header">
       <div class="container clearfix">
         <div class="header clearfix">
-          <div class="logo">
+          <a href="index.html" class="logo">
             <img src="img/logo.png" width="139" height="56" alt="Логотип «Нёрдс»">
-          </div>
+          </a>
           <nav class="main-navigation">
             <ul>
-              <li class="active">
+              <li>
                 <a href="#">Студия</a>
               </li>
               <li>
                 <a href="#">Клиенты</a>
               </li>
-              <li>
-                <a href="#">Магазин</a>
+              <li class="active">
+                <span>Магазин</span>
               </li>
               <li>
                 <a href="#">Контакты</a>
@@ -58,7 +59,7 @@
             </ul>
           </nav>
           <div class="cart-block">
-            <a href="#" class="login">Корзина</a>
+            <a href="#" class="cart"><span class="icon-basket"></span>Корзина</a>
           </div>
         </div>
         <h1>Добро пожаловать в магазин готовых макетов</h1>
