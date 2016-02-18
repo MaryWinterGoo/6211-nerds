@@ -348,6 +348,9 @@ a.cart:active span {
 /* -----------content----------- */
 .features {
   margin-bottom: 60px;
+}
+
+.features, section.content-row, .partners {
   border-bottom: 2px solid #eeeeee;
 }
 
@@ -430,8 +433,54 @@ a.cart:active span {
   border-top: 2px solid #a3841f;
 }
 
-.content-row {
-  margin-bottom: 20px;
+.content-row  p {
+  font-size: 15px;
+  line-height: normal;
+  color: #283136;
+  margin-bottom: 15px 0 25px 0;
+}
+
+.content-row  b {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 500;
+}
+
+.logo-about {
+  padding: 0 10%;
+}
+
+.since {
+  position: relative;
+  z-index: 2;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 15px;
+  line-height: normal;
+  color: #283136;
+  text-transform: uppercase;
+}
+
+.since span {
+  background-color: #ffffff;
+  padding: 0 10px;
+}
+
+.since::after {
+  content: "";
+  position: relative;
+  top: -9px;
+  z-index: -1;
+  display: block;
+  border-bottom: 2px solid #eeeeee;
+}
+
+.content-row .content-title {
+  ont-size: 16px;
+  line-height: normal;
+  font-weight: 500;
+  color: #283136;
+  text-transform: uppercase;
 }
 
 .content-column-left {
@@ -444,6 +493,27 @@ a.cart:active span {
   float: right;
   width: 240px;
   margin-bottom: 50px;
+}
+
+.content-row ul {
+  padding-left: 40px;
+  margin-top: 30px;
+  list-style: none;
+}
+
+.content-row li {
+  margin-bottom: 25px;
+}
+
+.content-row li::after {
+  content: "";
+  position: relative;
+  top: -9px;
+  left: -40px;
+  width: 25px;
+  z-index: -1;
+  display: block;
+  border-bottom: 2px solid #fb565a;
 }
 
 .partners {
@@ -461,6 +531,15 @@ a.cart:active span {
 
 .logo-partners:last-child {
   margin-right: 0;
+}
+
+a.logo-partners {
+  opacity: 0.5;
+  transition: all 0.5s ease;
+}
+
+a.logo-partners:hover, a.logo-partners:active {
+  opacity: 1;
 }
 
 .contacts {
