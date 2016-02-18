@@ -405,7 +405,7 @@ a.cart:active span {
 
 .features a.btn-red:active {
   background-color: #b63538;
-  border-top: 2px solid #9b2d30;
+  box-shadow: 0 -2px #9b2d30;
 }
 
 .features a.btn-green {
@@ -418,7 +418,7 @@ a.cart:active span {
 
 .features a.btn-green:active {
   background-color: #009053;
-  border-top: 2px solid #007b47;
+  box-shadow: 0 -2px #007b47;
 }
 
 .features a.btn-yellow {
@@ -431,7 +431,7 @@ a.cart:active span {
 
 .features a.btn-yellow:active {
   background-color: #c09b24;
-  border-top: 2px solid #a3841f;
+  box-shadow: 0 -2px #a3841f;
 }
 
 .content-row  p {
@@ -544,7 +544,6 @@ a.logo-partners {
 a.logo-partners:hover, a.logo-partners:active {
   opacity: 1;
 }
-
 
 /* -----------footer----------- */
 .contacts {
