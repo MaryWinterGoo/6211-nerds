@@ -25,9 +25,13 @@
         var map = new google.maps.Map(document.getElementById("map_canvas"),
             mapOptions);
 
+        var image = new google.maps.MarkerImage('img/pin.png',
+            new google.maps.Size(231, 190));
+
         var marker = new google.maps.Marker({
             position: markerLatLng,
             map: map,
+            icon: image,
             title: 'Нёрдс'
         });
       }
