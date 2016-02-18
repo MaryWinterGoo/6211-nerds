@@ -604,11 +604,59 @@ a.logo-partners:hover, a.logo-partners:active {
 .footer-social-btn {
   float: left;
   width: 300px;
+  margin: 10px 0;
 }
+
+.social-btn {
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  margin-right: 30px;
+  position: relative;
+  width: 62px;
+  height: 62px;
+  font-size: 0;
+  -moz-border-radius: 31px;
+  -webkit-border-radius: 31px;
+  border-radius: 31px;
+  background-color: #e1e1e1;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+
+.social-btn span {
+  font-size: 24px;
+  line-height: 62px;
+  color: #ffffff;
+}
+
+.social-btn:hover {
+  background-color: #fb565a;
+}
+
+.social-btn:active {
+  background-color: #d6494d;
+  box-shadow: 0 -2px #b63e42;
+}
+
 .footer-social-title {
   float: right;
   width: 560px;
 }
+
+.social-title {
+  font-weight: 500;
+  font-size: 36px;
+  ling-height: normal;
+}
+
+.footer-social-title p {
+  font-weight: 500;
+  font-size: 16px;
+  ling-height: normal;
+  color: #283136;
+}
+
 
 /* catalog */
 .filter {
