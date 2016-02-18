@@ -447,6 +447,8 @@ a.cart:active span {
 }
 
 .logo-about {
+  width: 187px;
+  height: 75px;
   padding: 0 10%;
 }
 
