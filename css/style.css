@@ -602,7 +602,7 @@ a.logo-partners:hover, a.logo-partners:active {
   display: block;
   margin-top: 25px;
   padding: 12px 10px;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 12px;
   text-align: center;
   color: #ffffff;
@@ -1359,7 +1359,7 @@ ul.paginator li.active span {
   width: 505px;
   margin-top: 25px;
   padding: 12px 10px;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 12px;
   text-align: center;
   color: #ffffff;
