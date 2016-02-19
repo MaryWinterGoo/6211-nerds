@@ -51,7 +51,7 @@ body {
 
 h1 {
   text-align: center;
-  margin: 40px 80px 90px 80px;
+  margin: 35px 80px 90px 80px;
   font-size: 40px;
   line-height: normal;
   font-weight: 400;
@@ -791,7 +791,7 @@ fieldset{
 
 legend {
   display: block;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
   font-size: 18px;
   line-height: normal;
   font-weight: 500;
@@ -817,7 +817,7 @@ input[type="checkbox"] {
 
 input[type="checkbox"] + label {
   display: block;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   padding-left: 35px;
   line-height: 20px;
   position: relative;
@@ -883,6 +883,7 @@ input[type="radio"]:disabled + label, input[type="radio"]:disabled + label::befo
 
 .filter .btn {
   padding: 15px 40px;
+  margin-top: 15px;
   border-radius: 3px;
   font-size: 12px;
   font-weight: 500;
@@ -916,7 +917,7 @@ input[type="radio"]:disabled + label, input[type="radio"]:disabled + label::befo
 
 /* -----------sort----------- */
 .sort {
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .sort-title {
@@ -1034,7 +1035,7 @@ ul.sort-type, ul.sort-mode {
   width: 240px;
   min-height: 270px;
   margin-right: 80px;
-  margin-bottom: 80px;
+  margin-bottom: 75px;
   position: relative;
   text-align: center;
 }
