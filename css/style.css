@@ -38,6 +38,7 @@
 
 /* -----------page----------- */
 body {
+  min-width: 1000px;
   margin: 0;
   padding: 0;
   font-size: 16px;
@@ -664,6 +665,7 @@ a.logo-partners:hover, a.logo-partners:active {
 
 /* -----------google-map----------- */
 .google-map {
+  min-width: 1000px;
   height: 416px;
   background: url(../img/bg-map.jpg) no-repeat;
 }
