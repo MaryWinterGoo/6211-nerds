@@ -553,7 +553,7 @@ a.logo-partners:hover, a.logo-partners:active {
 /* -----------footer----------- */
 .contacts {
   position: absolute;
-  top: 90px;
+  top: 70px;
   left: 160px;
   padding: 40px 30px;
   max-width: 250px;
@@ -664,7 +664,8 @@ a.logo-partners:hover, a.logo-partners:active {
 
 /* -----------google-map----------- */
 .google-map {
-  height: 500px;
+  height: 416px;
+  background: url(../img/bg-map.jpg) no-repeat;
 }
 
 /* -----------filter----------- */
