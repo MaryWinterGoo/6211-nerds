@@ -1294,18 +1294,20 @@ ul.paginator li.active span {
   font-weight: 500;
   color: #000000;
   text-transform: uppercase;
-  border: 2px solid #d7dcde;
   border-radius: 3px;
+  border: 0;
+  box-shadow: inset 0px 0px 0px 2px #d7dcde;
   outline: none;
+
 }
 
 .form input[type="text"]:hover {
-  border-color: #a2a9ac;
+  box-shadow: inset 0px 0px 0px 2px #a2a9ac;
   transition: all 0.5s ease;
 }
 
 .form input[type="text"]:focus {
-  border-color: #56bffb;
+  box-shadow: inset 0px 0px 0px 2px #56bffb;
   transition: all 0.5s ease;
 }
 
@@ -1328,18 +1330,19 @@ ul.paginator li.active span {
   font-weight: 500;
   color: #000000;
   text-transform: uppercase;
-  border: 2px solid #d7dcde;
+  box-shadow: inset 0px 0px 0px 2px #d7dcde;
   border-radius: 3px;
+  border: 0;
   outline: none;
 }
 
 .form textarea:hover {
-  border-color: #a2a9ac;
+  box-shadow: inset 0px 0px 0px 2px #a2a9ac;
   transition: all 0.5s ease;
 }
 
 .form textarea:focus {
-  border-color: #56bffb;
+  box-shadow: inset 0px 0px 0px 2px #56bffb;
   transition: all 0.5s ease;
 }
 
