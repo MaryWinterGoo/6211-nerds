@@ -6,38 +6,6 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-
-    <!-- google map -->
-    <script type="text/javascript"
-      src="http://maps.googleapis.com/maps/api/js?sensor=true">
-    </script>
-    <script type="text/javascript">
-      function initialize() {
-        var markerLatLng = new google.maps.LatLng(59.938783,30.3230014);
-
-        var mapOptions = {
-          center: markerLatLng,
-          zoom: 18,
-          mapTypeId: google.maps.MapTypeId.ROADMAP,
-          scrollwheel: false
-        };
-
-        var map = new google.maps.Map(document.getElementById("map_canvas"),
-            mapOptions);
-
-        var image = new google.maps.MarkerImage('img/pin.png',
-            new google.maps.Size(231, 190));
-
-        var marker = new google.maps.Marker({
-            position: markerLatLng,
-            map: map,
-            icon: image,
-            title: 'Нёрдс'
-        });
-      }
-
-      google.maps.event.addDomListener(window, 'load', initialize);
-    </script>
   </head>
   <body>
     <header class="main-header">
@@ -174,7 +142,7 @@
             <img src="img/catalog-item-img-4.jpg" width="240" height="240" alt="Товар">
           </div>
           <div class="catalog-item-description">
-            <a href="#" class="catalog-item-title">Modern organic thai</a>
+            <a href="#" class="catalog-item-title">Marquee</a>
             <p>Сайт для ресторана быстрого питания</p>
             <a href="#" class="add-to-cart"><span>12000 р.</span></a>
           </div>
@@ -228,7 +196,7 @@
           <div class="name-studio">Nёrds design studio</div>
           <div class="address">191186, Санкт-Петербург, <br>ул. Б. Конюшечная д. 19/8</div>
           <a href="tel:+78122757575" class="tel">тел.: +7 (812) 275-75-75</a>
-          <a href="#" class="write">Напишите нам</a>
+          <a href="write-to-us.html" class="write">Напишите нам</a>
         </div>
       </section>
       <section class="container footer-social clearfix">
@@ -262,6 +230,39 @@
         <button class="to-send" type="submit">Отправить</button>
       </form>
     </div>
+
+    <!-- google map -->
+    <script type="text/javascript"
+      src="http://maps.googleapis.com/maps/api/js?sensor=true">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+        var markerLatLng = new google.maps.LatLng(59.938783,30.3230014);
+
+        var mapOptions = {
+          center: markerLatLng,
+          zoom: 18,
+          mapTypeId: google.maps.MapTypeId.ROADMAP,
+          scrollwheel: false
+        };
+
+        var map = new google.maps.Map(document.getElementById("map_canvas"),
+            mapOptions);
+
+        var image = new google.maps.MarkerImage('img/pin.png',
+            new google.maps.Size(231, 190));
+
+        var marker = new google.maps.Marker({
+            position: markerLatLng,
+            map: map,
+            icon: image,
+            title: 'Нёрдс'
+        });
+      }
+
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+
     <script src="js/main.js"></script>
   </body>
 </html>

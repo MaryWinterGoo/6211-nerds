@@ -1145,7 +1145,7 @@ ul.paginator a:hover {
 
 ul.paginator a:active {
   background: #d5d5d5;
-  box-shadow: 0 -3px #b5b5b5;
+  box-shadow: 0 -2px #b5b5b5;
 }
 
 ul.paginator li.active span {
