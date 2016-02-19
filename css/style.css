@@ -288,16 +288,24 @@ a.cart:active span {
   width: 220px;
   margin-top: 25px;
   padding: 12px 10px;
-
   font-weight: 300;
   font-size: 12px;
   text-align: center;
   color: #ffffff;
   text-transform: uppercase;
   text-decoration: none;
-
   background: #fb565a;
   border-radius: 3px;
+  transition: all 0.5s ease;
+}
+
+.slide .btn:hover {
+  background-color: #d6494d;
+}
+
+.slide .btn:active {
+  background-color: #b63538;
+  box-shadow: 0 -2px #9b2d30;
 }
 
 .slide:nth-child(1) {
@@ -596,6 +604,16 @@ a.logo-partners:hover, a.logo-partners:active {
   text-decoration: none;
   background: #fb565a;
   border-radius: 3px;
+  transition: all 0.5s ease;
+}
+
+.contacts .write:hover {
+  background-color: #d6494d;
+}
+
+.contacts .write:active {
+  background-color: #b63538;
+  box-shadow: 0 -2px #9b2d30;
 }
 
 .footer-map {
