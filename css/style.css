@@ -1360,6 +1360,16 @@ ul.paginator li.active span {
   border: 0;
   background: #fb565a;
   border-radius: 3px;
+  transition: all 0.5s ease;
   outline: 0;
   cursor: pointer;
+}
+
+.form .to-send:hover {
+  background: #d6494d;
+}
+
+.form .to-send:active {
+  background: #b63538;
+  box-shadow: 0 -2px #9b2d30;
 }
