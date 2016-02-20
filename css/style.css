@@ -971,7 +971,7 @@ ul.sort-type, ul.sort-mode {
 
 .sort-type a:hover {
   opacity: 1;
-  color: #00ca74;
+  color: #000000;
   border-bottom: 1px solid #00ca74;
 }
 
