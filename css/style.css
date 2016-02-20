@@ -526,6 +526,8 @@ a.cart:active span {
 
 .content-row li {
   margin-bottom: 25px;
+  font-size: 15px;
+  color: #283136;
 }
 
 .content-row li::before {
