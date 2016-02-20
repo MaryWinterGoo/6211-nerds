@@ -648,18 +648,13 @@ a.logo-partners:hover, a.logo-partners:active {
   width: 62px;
   height: 62px;
   font-size: 0;
-  -moz-border-radius: 31px;
-  -webkit-border-radius: 31px;
   border-radius: 31px;
   background-color: #e1e1e1;
-  color: #ffffff;
-  transition: all 0.5s ease;
-}
-
-.social-btn span {
   font-size: 24px;
   line-height: 62px;
   color: #ffffff;
+  transition: all 0.5s ease;
+  text-decoration: none;
 }
 
 .social-btn:hover {
