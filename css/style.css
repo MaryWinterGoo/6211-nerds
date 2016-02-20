@@ -690,6 +690,7 @@ a.logo-partners:hover, a.logo-partners:active {
   min-width: 1000px;
   height: 416px;
   background: url(../img/bg-map.jpg) no-repeat;
+  background-size: cover;
 }
 
 /* -----------filter----------- */
