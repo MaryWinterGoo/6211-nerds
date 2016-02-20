@@ -628,8 +628,8 @@ a.logo-partners:hover, a.logo-partners:active {
 }
 
 .footer-social {
-  margin-top: 65px;
-  margin-bottom: 75px;
+  padding-top: 65px;
+  padding-bottom: 75px;
 }
 
 .footer-social-btn {
