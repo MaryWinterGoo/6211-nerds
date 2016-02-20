@@ -50,3 +50,30 @@
           }
         }
       });
+
+      //google map
+      function initialize() {
+        var markerLatLng = new google.maps.LatLng(59.938783,30.3230014);
+
+        var mapOptions = {
+          center: markerLatLng,
+          zoom: 18,
+          mapTypeId: google.maps.MapTypeId.ROADMAP,
+          scrollwheel: false
+        };
+
+        var map = new google.maps.Map(document.getElementById("map_canvas"),
+            mapOptions);
+
+        var image = new google.maps.MarkerImage('img/pin.png',
+            new google.maps.Size(231, 190));
+
+        var marker = new google.maps.Marker({
+            position: markerLatLng,
+            map: map,
+            icon: image,
+            title: 'Нёрдс'
+        });
+      }
+
+      google.maps.event.addDomListener(window, 'load', initialize);
