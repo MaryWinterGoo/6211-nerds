@@ -118,7 +118,7 @@ header {
 
 .main-navigation ul {
   padding: 0;
-  margin: 30px 35px 30px 0;
+  margin: 30px 35px 35px 0;
   text-align: right;
   list-style: none;
   font-size: 0;
@@ -378,8 +378,8 @@ a.cart:active span {
   height: 124px;
 }
 
-.features-item img, .features-item p, .features-item h2 {
-  margin-bottom: 24px;
+.features-item img, .features-item h2 {
+  margin-bottom: 22px;
 }
 
 .features-item:nth-child(3n) {
@@ -389,14 +389,15 @@ a.cart:active span {
 
 .features p {
   font-size: 15px;
-  line-height: normal;
+  line-height: 20px;
+  margin-bottom: 26px;
   color: #283136;
 }
 
 .features a.btn {
   display: inline-block;
   vertical-align: top;
-  padding: 15px 40px;
+  padding: 12px 40px;
   border-radius: 3px;
   font-size: 12px;
   font-weight: 400;
@@ -446,19 +447,19 @@ a.cart:active span {
 }
 
 .content-row {
-  padding-bottom: 5px;
+  padding-bottom: 10px;
 }
 
 .content-row  p {
   font-size: 15px;
-  line-height: 20px;
+  line-height: 18px;
   color: #283136;
   margin: 15px 0px 25px 0px;
 }
 
 .content-row  b {
   font-size: 36px;
-  line-height: 36px;
+  line-height: 28px;
   font-weight: 500;
 }
 
@@ -504,7 +505,7 @@ a.cart:active span {
 .content-column-left {
   float: left;
   width: 620px;
-  margin-bottom: 30px;
+  margin-bottom: 24px;
 }
 
 .content-column-right {
@@ -537,8 +538,8 @@ a.cart:active span {
 }
 
 .partners {
-  margin-bottom: 85px;
-  padding-top: 50px;
+  margin-bottom: 84px;
+  padding-top: 40px;
   padding-bottom: 30px;
   text-align: center;
 }
@@ -565,16 +566,16 @@ a.logo-partners:hover, a.logo-partners:active {
 /* -----------footer----------- */
 .contacts {
   position: absolute;
-  top: 80px;
+  top: 90px;
   left: 50%;
   transform: translateX(-440px);
-  padding: 40px 20px;
+  padding: 28px 20px;
   max-width: 250px;
   background-color: #ffffff;
 }
 
 .contacts .name-studio {
-  margin-bottom: 10px;
+  margin-bottom: 16px;
   font-size: 18px;
   line-height: normal;
   font-weight: 500;
@@ -582,7 +583,7 @@ a.logo-partners:hover, a.logo-partners:active {
 }
 
 .contacts .address {
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   font-size: 16px;
   line-height: 20px;
   font-weight: 500;
@@ -591,7 +592,7 @@ a.logo-partners:hover, a.logo-partners:active {
 
 .contacts a.tel {
   display: block;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
   color: #666666;
   text-decoration: none;
 }
@@ -669,13 +670,14 @@ a.logo-partners:hover, a.logo-partners:active {
 }
 
 .social-title {
+  padding-top: 10px;
   font-weight: 500;
   font-size: 36px;
   line-height: normal;
 }
 
 .footer-social-title p {
-  margin: 10px 0;
+  margin: 5px 0;
   font-weight: 500;
   font-size: 16px;
   line-height: normal;
