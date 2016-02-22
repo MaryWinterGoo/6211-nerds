@@ -750,6 +750,7 @@ a.logo-partners:hover, a.logo-partners:active {
 .price-controls label {
   font-size: 16px;
   display: inline-block;
+  vertical-align: top;
   width: 50%;
 }
 
