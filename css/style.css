@@ -51,9 +51,9 @@ body {
 
 h1 {
   text-align: center;
-  margin: 35px 80px 90px 80px;
+  margin: 35px 80px 85px 80px;
   font-size: 40px;
-  line-height: normal;
+  line-height: 44px;
   font-weight: 400;
   text-transform: uppercase;
 }
@@ -764,7 +764,7 @@ a.logo-partners:hover, a.logo-partners:active {
   font-size: 16px;
   width: 60px;
   margin-left: 10px;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
   padding: 8px 10px;
   text-align: center;
   color: #283136;
@@ -881,7 +881,7 @@ input[type="radio"]:disabled + label, input[type="radio"]:disabled + label::befo
 }
 
 .filter .btn {
-  padding: 15px 40px;
+  padding: 12px 46px;
   margin-top: 15px;
   border-radius: 3px;
   font-size: 12px;
@@ -1028,7 +1028,8 @@ ul.sort-type, ul.sort-mode {
 }
 
 .icon-down-dir::before, .icon-up-dir::before {
-   line-height: 14px;
+  line-height: 14px;
+  width: 8px;
 }
 
 /* -----------shop----------- */
@@ -1159,7 +1160,7 @@ ul.paginator li {
 
 ul.paginator a {
   display: block;
-  padding: 15px 20px;
+  padding: 12px 16px;
   font-size: 12px;
   color: #000000;
   text-decoration: none;
@@ -1167,6 +1168,10 @@ ul.paginator a {
   border-radius: 3px;
   text-transform: uppercase;
   transition: all 0.5s ease;
+}
+
+ul.paginator li:last-child a {
+  padding: 12px 30px;
 }
 
 ul.paginator a:hover {
@@ -1180,7 +1185,7 @@ ul.paginator a:active {
 
 ul.paginator span {
   display: block;
-  padding: 13px 18px;
+  padding: 10px 14px;
   color: #000000;
   text-decoration: none;
   font-size: 12px;
