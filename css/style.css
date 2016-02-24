@@ -576,8 +576,8 @@ a.logo-partners:hover, a.logo-partners:active {
 
 .contacts .name-studio {
   margin-bottom: 16px;
-  font-size: 18px;
-  line-height: normal;
+  font-size: 16px;
+  line-height: 22px;
   font-weight: 500;
   text-transform: uppercase;
 }
@@ -633,7 +633,7 @@ a.logo-partners:hover, a.logo-partners:active {
 .footer-social-btn {
   float: left;
   width: 300px;
-  margin: 10px 0;
+  margin: 15px 0;
 }
 
 .social-btn {
@@ -704,7 +704,7 @@ a.logo-partners:hover, a.logo-partners:active {
 .range-controls {
   position: relative;
   height: 41px;
-  padding-top: 39px;
+  padding-top: 42px;
   padding-right: 20px;
   padding-left: 20px;
   margin-bottom: 15px;
@@ -726,7 +726,7 @@ a.logo-partners:hover, a.logo-partners:active {
 
 .range-controls .toggle {
   position: absolute;
-  top: 30px;
+  top: 33px;
   left: 0px;
   width: 4px;
   height: 4px;
@@ -763,7 +763,7 @@ a.logo-partners:hover, a.logo-partners:active {
 .price-controls input {
   font-size: 16px;
   width: 60px;
-  margin-left: 10px;
+  margin-left: 6px;
   margin-bottom: 30px;
   padding: 8px 10px;
   text-align: center;
@@ -775,7 +775,11 @@ a.logo-partners:hover, a.logo-partners:active {
 }
 
 .filter-group {
-  margin-bottom: 25px;
+  margin-bottom: 30px;
+}
+
+.filter-group-price {
+  margin-bottom: 21px;
 }
 
 .filter-group-name {
@@ -790,7 +794,7 @@ fieldset{
 
 legend {
   display: block;
-  margin-bottom: 15px;
+  margin-bottom: 16px;
   font-size: 18px;
   line-height: normal;
   font-weight: 500;
@@ -816,9 +820,9 @@ input[type="checkbox"] {
 
 input[type="checkbox"] + label {
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
   padding-left: 35px;
-  line-height: 20px;
+  line-height: 28px;
   position: relative;
   cursor: pointer;
 }
@@ -829,7 +833,7 @@ input[type="checkbox"] + label::before {
   top: 0;
   left: 0;
   font-family: "symbols-nerds";
-  font-size: 24px;
+  font-size: 28px;
   color: #c1c1c1;
 }
 
@@ -851,9 +855,9 @@ input[type="radio"] {
 
 input[type="radio"] + label {
   display: block;
-  margin-bottom: 25px;
+  margin-bottom: 16px;
   padding-left: 35px;
-  line-height: 20px;
+  line-height: 25px;
   position: relative;
   cursor: pointer;
 }
@@ -864,7 +868,7 @@ input[type="radio"] + label::before {
   top: 0;
   left: 0;
   font-family: "symbols-nerds";
-  font-size: 24px;
+  font-size: 28px;
   color: #c1c1c1;
 }
 
@@ -921,7 +925,7 @@ input[type="radio"]:disabled + label, input[type="radio"]:disabled + label::befo
 
 .sort-title {
   float: left;
-  margin-right: 40px;
+  margin-right: 38px;
   font-size: 12px;
   line-height: normal;
   font-weight: 500;
@@ -948,7 +952,7 @@ ul.sort-type, ul.sort-mode {
 .sort li {
   display: inline-block;
   vertical-align: top;
-  margin-right: 40px;
+  margin-right: 45px;
   font-size: 12px;
   line-height: normal;
   font-weight: 500;
